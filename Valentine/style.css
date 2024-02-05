@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(251, 251, 251);
+}
+
+#gif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgID{
+    height: 300px;
+}
+
+#quest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#answer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin: 15px;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#yes{
+    background-color: rgb(139, 207, 37);
+    border: none;
+    border-radius: 5px;
+}
+
+#yes:hover{
+    background-color: rgb(119, 178, 31);
+}
+
+#no{
+    background-color: rgb(235, 3, 3);
+    border: none;
+    border-radius: 5px;
+}
+
+#no:hover{
+    background-color: rgb(199, 2, 2);
+}

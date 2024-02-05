@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes?</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <script>
+        function yes() {
+            document.getElementById("imgID").src = "second.gif";
+            document.getElementById("question").innerHTML = "YAYYYY!";
+            document.body.style.backgroundColor = "white";
+            document.getElementById("yes").style.backgroundColor = "white";
+            document.getElementById("no").style.backgroundColor = "white";
+            document.getElementById("yes").style.fontSize = "0px";
+            document.getElementById("no").style.fontSize = "0px";
+        }
+
+        var i = 0;
+        function no() {
+            i++
+            if (i === 1) {
+                document.getElementById("imgID").src = "angry.gif";
+                document.getElementById("yes").style.fontSize = "22px";
+                document.getElementById("no").style.fontSize = "12px";
+            }
+            else if (i === 2) {
+                document.getElementById("yes").style.fontSize = "27px";
+                document.getElementById("no").style.fontSize = "7px";
+
+            } else if (i === 3) {
+                document.getElementById("yes").style.fontSize = "32px";
+                document.getElementById("yes").style.borderRadius = "7px";
+                document.getElementById("no").style.fontSize = "2px";
+
+            }
+            else {
+                document.getElementById("yes").style.fontSize = "37px";
+                document.getElementById("no").style.fontSize = "0px";
+                document.getElementById("no").style.backgroundColor = "white";
+            }
+        }
+
+    </script>
+
+
+    <div id="gif">
+        <img id="imgID" src="first.gif">
+    </div>
+
+    <div id="quest">
+        <h1 id="question">Would you be my valentine?</h1>
+    </div>
+
+    <div id="answer">
+        <button id="yes" onclick="yes()">Yessss!</button>
+        <button id="no" onclick="no()">No</button>
+    </div>
+</body>
+
+</html>
